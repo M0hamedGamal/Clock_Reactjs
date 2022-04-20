@@ -1,3 +1,10 @@
+.my-watch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+}
+
 .clock {
     width: 350px;
     height: 350px;

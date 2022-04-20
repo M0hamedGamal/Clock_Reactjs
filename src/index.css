@@ -1,18 +1,11 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  position: relative;
-display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background-color: #091921;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+    position: relative;
+    background-color: #091921;
 }
+

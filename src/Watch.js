@@ -1,7 +1,7 @@
-import './App.css';
+import './Watch.css';
 import {useState} from "react";
 
-function App() {
+function Watch() {
     const deg = 6;
     let [hour, setHour] = useState(0)
     let [min, setMin] = useState(0)
@@ -15,7 +15,8 @@ function App() {
     })
 
     return (
-        <>
+        <div className='my-watch'>
+
         <div className="clock">
             <div className='hour'>
                 <div className='hr' style={{transform: `rotateZ(${hour + min / 12}deg)`}}/>
@@ -29,8 +30,8 @@ function App() {
                 <div className='sc' style={{transform: `rotateZ(${sec}deg)`}}/>
             </div>
         </div>
-        </>
+        </div>
     );
 }
 
-export default App;
+export default Watch;

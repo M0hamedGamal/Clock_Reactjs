@@ -1,17 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import {BrowserRouter, Routes, Route, Navigate} from "react-router-dom";
+
+import "../node_modules/bootstrap/dist/css/bootstrap.css";
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+
+import MyNav from "./MyNav";
+import Watch from './Watch';
+import DigitalClock from "./DigitalClock";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+    <React.StrictMode>
+        <BrowserRouter>
+            <MyNav/>
+            <Routes>
+                <Route path='/' element={<Navigate to="watch" replace />} />
+                <Route element={<Watch/>} path='watch'/>
+                <Route element={<DigitalClock/>} path='digital-clock'/>
+            </Routes>
+        </BrowserRouter>
+    </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
