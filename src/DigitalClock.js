@@ -15,7 +15,7 @@ const DigitalClock = () => {
     return (
         <div className='digital-clock-container'>
             <div className="digital-clock">
-                <div className='time'>
+                <div className='d-flex flex-column flex-md-row'>
                     <div className='box'><span>{hour}</span><span>Hours</span></div>
                     <div className='box'><span>{min}</span><span>Minutes</span></div>
                     <div className='box'><span>{sec}</span><span>Seconds</span></div>
