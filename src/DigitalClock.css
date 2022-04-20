@@ -7,7 +7,7 @@
 
 .digital-clock div {
     position: relative;
-    margin: 25px;
+    margin: 0 25px;
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
 
